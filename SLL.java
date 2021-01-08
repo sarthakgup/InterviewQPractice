@@ -1,9 +1,8 @@
 public class SLL
 {
-    Node head;
-
-    public void main(String[] args)
+    public static void main(String[] args)
     {
+        Node head = new Node();
         System.out.println("Ready");
 
         // Creating linked list
@@ -33,7 +32,7 @@ public class SLL
     }
 
     // method takes head of a list and returns length
-    public int length(Node headOfList)
+    public static int length(Node headOfList)
     {
         int lenCounter = 0;
 
@@ -51,7 +50,7 @@ public class SLL
         Method takes a linkedlist head and appends a node of 'value' to the end
         Returns: updated linked list
     */
-    public Node append(Node headOfList, int value)
+    public static Node append(Node headOfList, int value)
     {
         Node current;
         current = headOfList;
@@ -70,7 +69,7 @@ public class SLL
 
     // Method takes head and removes last node
     // Returns updated linked list
-    public Node remove(Node headOfList)
+    public static Node remove(Node headOfList)
     {
         Node current;
         current = headOfList;
@@ -90,7 +89,7 @@ public class SLL
         Given a linked list, remove nth node
         Return updated linked list
     */
-    public Node removeNthNode(Node headOfList, int nPos)
+    public static Node removeNthNode(Node headOfList, int nPos)
     {
         Node current;
         current = headOfList;
@@ -113,7 +112,7 @@ public class SLL
         return current;
     }
 
-    public Node insertAtStart(Node headOfList, Node toInsert)
+    public static Node insertAtStart(Node headOfList, Node toInsert)
     {
         Node insertion;
         insertion = toInsert;
@@ -124,7 +123,7 @@ public class SLL
         return insertion;
     }
 
-    public Node insertAtNth(Node headNode, Node toInsert, int nPos)
+    public static Node insertAtNth(Node headNode, Node toInsert, int nPos)
     {
         Node current;
         current = headNode;
@@ -161,7 +160,7 @@ public class SLL
         Takes a head parameter and removes n nodes from the end of the linked list
         Returns: updated linked list
     */
-    public Node removeNNumberOfNodes(Node headListNode, int nVal)
+    public static Node removeNNumberOfNodes(Node headListNode, int nVal)
     {
         Node current;
         current = headListNode;
@@ -177,7 +176,7 @@ public class SLL
         return current;
     }
 
-    public class Node
+    public static class Node
     {
         Node prev;
         Node next;
