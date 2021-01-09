@@ -2,11 +2,18 @@ public class SLL
 {
     public static void main(String[] args)
     {
-        Node head = new Node();
+        Node head = new Node(10);
+        Node current = new Node();
+        current = head;
+
+        System.out.println(head.valueOfNode);
         System.out.println("Ready");
+        append(head, 22);
+        current = current.next;
+        System.out.println(current.valueOfNode);
 
         // Creating linked list
-        head = new Node(10);
+        //head = new Node(10);
         Node currentPointerForHead;
         currentPointerForHead = head;
 
@@ -19,6 +26,7 @@ public class SLL
         head = currentPointerForHead;
 
         System.out.println("Result: ");
+        System.out.println(head.valueOfNode);
         
         //resetting currentpointerforhead back to head for the following loop:
         currentPointerForHead = head;
