@@ -1,2 +1,2 @@
-# MsftInterviewQs
-Repo for msft interview questions and general interview questions that I solve.
+# InterviewQPractice
+Repo for interview questions and general interview questions that I solve.
