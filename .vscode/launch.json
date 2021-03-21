@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch sortingPractice",
+            "request": "launch",
+            "mainClass": "sortingPractice",
+            "projectName": "MsftInterviewQs_1366e1a3"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
